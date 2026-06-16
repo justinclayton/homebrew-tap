@@ -5,20 +5,20 @@
 class Tfc < Formula
   desc "CLI for HCP Terraform"
   homepage "https://github.com/justinclayton/tfc-cli"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/justinclayton/tfc-cli/releases/download/v0.2.0/tfc_0.2.0_darwin_amd64.tar.gz"
-      sha256 "ec1c2a9d1774ba20138f5c1d5713eb98f11453be308b8509237372b91e203cbd"
+      url "https://github.com/justinclayton/tfc-cli/releases/download/v0.3.0/tfc_0.3.0_darwin_amd64.tar.gz"
+      sha256 "5b3a21b84a1fd797964a8c435a8d048abdc5a4db35714ab3f6f7336a3caff8c1"
 
       define_method(:install) do
         bin.install "tfc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/justinclayton/tfc-cli/releases/download/v0.2.0/tfc_0.2.0_darwin_arm64.tar.gz"
-      sha256 "35ff4d73977b748e907fa83ed4f9bd05b5bbf4b4c5b17497d84a45afcbe023d3"
+      url "https://github.com/justinclayton/tfc-cli/releases/download/v0.3.0/tfc_0.3.0_darwin_arm64.tar.gz"
+      sha256 "c8da57d3f4bfff27600a9efecab656642ebf253aba28f77d5d23f229096ab605"
 
       define_method(:install) do
         bin.install "tfc"
@@ -28,15 +28,15 @@ class Tfc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/justinclayton/tfc-cli/releases/download/v0.2.0/tfc_0.2.0_linux_amd64.tar.gz"
-      sha256 "38b008bab2fa750c18006ff6e40f59549ffd15e789c563372c72ed38f5523df3"
+      url "https://github.com/justinclayton/tfc-cli/releases/download/v0.3.0/tfc_0.3.0_linux_amd64.tar.gz"
+      sha256 "7c5f9a7f182d0cc7b11bff20aa4cf8ab07c52b30300c3f7ce435cd9892519328"
       define_method(:install) do
         bin.install "tfc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/justinclayton/tfc-cli/releases/download/v0.2.0/tfc_0.2.0_linux_arm64.tar.gz"
-      sha256 "0f60d8b26825a80cc3484994c2fac1d337d06f811e93ebe038fb83c1a7a8089a"
+      url "https://github.com/justinclayton/tfc-cli/releases/download/v0.3.0/tfc_0.3.0_linux_arm64.tar.gz"
+      sha256 "e859474462bbd683384309e36fda3a7145ac4908e7de7cb0eaf39046f8d2ef92"
       define_method(:install) do
         bin.install "tfc"
       end
